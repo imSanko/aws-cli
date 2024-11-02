@@ -2,6 +2,27 @@
 CHANGELOG
 =========
 
+1.35.20
+=======
+
+* api-change:``bedrock-agent``: Amazon Bedrock Knowledge Bases now supports using application inference profiles to increase throughput and improve resilience.
+* api-change:``docdb-elastic``: Amazon DocumentDB Elastic Clusters adds support for pending maintenance actions feature with APIs GetPendingMaintenanceAction, ListPendingMaintenanceActions and ApplyPendingMaintenanceAction
+* api-change:``logs``: This release introduces an improvement in PutLogEvents
+* api-change:``taxsettings``: Add support for supplemental tax registrations via these new APIs: PutSupplementalTaxRegistration, ListSupplementalTaxRegistrations, and DeleteSupplementalTaxRegistration.
+
+
+1.35.19
+=======
+
+* api-change:``amp``: Added support for UpdateScraper API, to enable updating collector configuration in-place
+* api-change:``autoscaling``: Adds bake time for Auto Scaling group Instance Refresh
+* api-change:``batch``: Add `podNamespace` to `EksAttemptDetail` and `containerID` to `EksAttemptContainerDetail`.
+* api-change:``elbv2``: Add UDP support for AWS PrivateLink and dual-stack Network Load Balancers
+* api-change:``glue``: Add schedule support for AWS Glue column statistics
+* api-change:``sagemaker``: SageMaker HyperPod adds scale-down at instance level via BatchDeleteClusterNodes API and group level via UpdateCluster API. SageMaker Training exposes secondary job status in TrainingJobSummary from ListTrainingJobs API. SageMaker now supports G6, G6e, P5e instances for HyperPod and Training.
+* api-change:``sesv2``: This release enables customers to provide the email template content in the SESv2 SendEmail and SendBulkEmail APIs instead of the name or the ARN of a stored email template.
+
+
 1.35.18
 =======
 
